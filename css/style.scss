@@ -1,0 +1,43 @@
+.box {
+  background: cornflowerblue;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  @media screen and (max-width: 400px) {
+    justify-content: center;
+  }
+}
+
+.button {
+  padding: 10px 20px; // 上下10px 左右20pxの隙間を作る。
+  margin: 10px 0; // 上下に10pxの空白
+  background: midnightblue; // 背景の色
+  color: #fff; // 文字の色
+  width: 100px; // 幅を100px
+  text-align: center; // テキストを中央に寄せる
+  border-radius: 8px; // 角を8px丸くする
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16); // 影をつける。
+  transition: 0.3s ease-out; // ゆっくり動くようにする。
+  @media screen and (max-width: 400px) {
+    width: 80%;
+    margin: 10px auto;
+  }
+  &:hover {
+    cursor: pointer; // マウスのアイコンが変わる。
+    opacity: 0.8; // 透明度0.8
+    transform: translateY(-2px); // 上に2px移動
+    box-shadow: 0 3px 6px rgba(0,0,0,0.5); // 影を濃くする
+  }
+}
+
+.red {
+  background: tomato;
+}
